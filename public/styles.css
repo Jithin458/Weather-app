@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'REM';
+    font-size: 20px;
+    height: 700px;
+    display:flex;
+    justify-content:center;
+    margin-top: 80px;
+    background-color: #171d2c;
+}
+.search{
+    background-color: #2E4583;
+    border-radius: 15px;
+    padding:10px;
+    width:500px;
+    height:150px;
+}
+input[type="text"]{
+    border:none;
+    outline:none;
+    width:400px;
+    padding:10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.flex-input{
+    display:flex;
+    flex-direction: row;
+
+}
+label{
+    flex-basis:130px;
+    font-weight: 25;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+input[type="submit"]{
+    width:100%;
+    margin: 6px 0px;
+    padding:6px;
+    border-radius: 10px;
+    border:none;
+    background-color: #5983FC;
+}
+input[type="submit"]:hover{
+   cursor:pointer;
+   background-color: #3E60C1;
+}
