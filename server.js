@@ -3,6 +3,7 @@ const app = express();
 const https = require('https')
 require('dotenv').config()
 const apiKey = process.env.API_KEY
+const PORT = process.env.PORT || 3000
 
 app.use(express.static('public'));
 app.set('view engine','ejs');
@@ -28,4 +29,4 @@ app.post('/',(req,res)=>{
 }) 
 
 
-app.listen(5000)
+app.listen(PORT)
