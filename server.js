@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
 const https = require('https')
-const path = require('path')
 require('dotenv').config()
 const apiKey = process.env.API_KEY
 
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static('public'));
 app.set('view engine','ejs');
 app.use(express.urlencoded({extended:false}));
 
